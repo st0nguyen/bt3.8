@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Tiền thuê bao điện kế: 1000đ/tháng
+
+Định mức sử dụng điện cho mỗi hộ là: 50 KW với giá 230đ/KW
+
+Nếu phần vượt định mức <= 50KW thì tính giá 480đ/KW */
+    let luongdien=+prompt('Lượng điện bạn đã sử dụng (KW):');
+    let tientradinhmuc= 50*230;
+    let tiendienke=1000;
+    if (luongdien>50) {
+       let luongdienvuot=luongdien-50;
+       let dongiavuotdinhmuc= 480;
+   }else { 
+       let dongiavuotdinhmuc=0;
+       let luongdienvuot=1
+   }
+   let tienvuotdinhmuc=luongdienvuot*dongiavuotdinhmuc;
+   let tongtiendien=tiendienke + tientradinhmuc + tienvuotdinhmuc;
+   alert('số tiền bạn phải trả tiền là: '+tongtiendien);
+
+    
+    </script>
+</body>
+</html>

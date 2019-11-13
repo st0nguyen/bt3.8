@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    alert('Nhập các tham số của phương trình bậc 2: ax²+bx+c=0 với a khác 0');
+    let a =+prompt('a:');
+    let b =+prompt('b:');
+    let c =+prompt('c:');
+    d=(b*b)-(4*a*c);
+    if (d<0){
+        alert('pt vô nghiệm');
+    }else if (d>0){
+      let  x1=(-b+(Math.sqrt(a)))/(2*a);
+      let x2=(-b-(Math.sqrt(a)))/(2*a);
+        alert('pt có 2 nghiệm x1='+x1+' x2='+x2);
+    }else{
+        alert('pt có nghiệm kép x1=x2='+((-b)/2*a));
+    }
+    </script>
+</body>
+</html>
