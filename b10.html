@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giá điện</title>
+</head>
+
+<body>
+    <script>
+        let sodien = parseFloat(prompt("Nhập số điện sử dụng :"));
+        let tiendien;
+        if (sodien <= 50) {
+            tiendien = sodien * 2000;
+        } else if (sodien <= 100) {
+            tiendien = 50 * 2000 + (sodien - 50) * 3000;
+        }
+        else {
+            tiendien = 50 * 2000 + 50 * 3000 + (sodien - 100) * 2014;
+        }
+        alert("Số tiền điện: " + tiendien);
+    </script>
+
+</body>
+
+</html>
